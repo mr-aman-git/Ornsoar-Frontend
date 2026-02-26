@@ -22,6 +22,8 @@ jobs:
             cd /var/www/ornsoar/frontend
             git pull origin main
             
+            # GitHub Secret se .env file banana (sirf ek variable hai aapka)
+            echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" > .env
             
             # Nayi image build karke container restart karna
             docker compose up -d --build
