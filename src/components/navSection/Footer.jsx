@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="bg-linear-to-r from-blue-700 to-blue-900 text-white mt-20">
+    <footer className="bg-blue-500 text-white mt-20">
       <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
 
         {/* Company Info */}

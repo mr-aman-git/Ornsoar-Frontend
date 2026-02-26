@@ -2,13 +2,19 @@ import React from 'react'
 import HeroSection from '../../components/homeSection/HeroSection'
 import About from '../../components/homeSection/About'
 import WhyChoose from '../../components/homeSection/WhyChoose'
+import HowItWorks from '../../components/homeSection/HowItWorks'
+import BrandsSection from '../../components/homeSection/BrandsSection'
+import JobCategories from '../../components/homeSection/JobCategories'
 
 const page = () => {
   return (
     <>
         <HeroSection/>
-        <About/>
+        <BrandsSection/>
+        <JobCategories/>
+        {/* <About/>
         <WhyChoose/>
+        <HowItWorks/> */}
     </>
   )
 }
