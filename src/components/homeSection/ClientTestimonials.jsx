@@ -11,30 +11,30 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    name: "Rahul Sharma",
+    name: "Mohamed Fazil Abdu",
     role: "Driver - UAE",
-    image: "/clients/client1.jpg",
+    image: "/client/Image1.png",
     review:
       "Ornsoar Consultancy helped me secure a driver job in Dubai within 2 months. The process was transparent and smooth.",
   },
   {
-    name: "Imran Khan",
+    name: "Manikandan Sundaram",
     role: "Welder - Saudi Arabia",
-    image: "/clients/client2.jpg",
+    image: "/client/Image2.png",
     review:
       "Very professional team. They guided me properly with documentation and visa process. Highly recommended!",
   },
   {
-    name: "Sanjay Kumar",
+    name: "Karthick Velayutham",
     role: "Electrician - Qatar",
-    image: "/clients/client3.jpg",
+    image: "/client/Image3.png",
     review:
       "I got placed in Qatar with a good salary package. Thank you Ornsoar for this opportunity.",
   },
   {
-    name: "Amit Verma",
+    name: "Yoonus Ahamed Saleem",
     role: "Warehouse Staff - UAE",
-    image: "/clients/client4.jpg",
+    image: "/client/Image4.png",
     review:
       "Reliable consultancy with genuine overseas job offers. My experience was safe and hassle-free.",
   },

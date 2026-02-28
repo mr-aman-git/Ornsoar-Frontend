@@ -1,9 +1,9 @@
 import React from 'react'
-import Contact from './Contact'
+import Career from './Career'
 const page = () => {
   return (
     <>
-    <Contact/>
+    <Career/>
     </>
   )
 }
