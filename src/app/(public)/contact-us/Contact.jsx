@@ -109,7 +109,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-gray-500">Email Address</p>
                     <p className="font-semibold text-gray-800 break-all">
-                      admission@studymbbs.education
+                      hr@ornsoar.com
                     </p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-gray-500">Phone Number</p>
                     <p className="font-semibold text-gray-800">
-                      +91 91590 91595
+                      +91 9626096262
                     </p>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`w-full py-4 rounded-xl bg-blue-900 hover:bg-orange-500 text-white font-bold flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] active:scale-95 shadow-lg shadow-blue-900/20 ${
+                    className={`w-full py-4 rounded-xl bg-blue-500 hover:bg-orange-500 text-white font-bold flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] active:scale-95 shadow-lg shadow-blue-900/20 ${
                       loading
                         ? "opacity-70 cursor-not-allowed"
                         : "cursor-pointer"

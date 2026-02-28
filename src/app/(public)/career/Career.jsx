@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaRupeeSign, FaWhatsapp, FaBriefcase } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaRupeeSign,
+  FaWhatsapp,
+  FaBriefcase,
+} from "react-icons/fa";
 import { useState } from "react";
 
 const jobs = [
@@ -42,8 +47,8 @@ Name: ${name}
 Location: Barakhambha, KG Marg, Connaught Place (CP), New Delhi
 Fresher: Yes`;
 
-    const whatsappURL = `https://wa.me/919334735831?text=${encodeURIComponent(
-      message
+    const whatsappURL = `https://wa.me/919626096262?text=${encodeURIComponent(
+      message,
     )}`;
 
     window.open(whatsappURL, "_blank");
@@ -51,7 +56,6 @@ Fresher: Yes`;
 
   return (
     <div className="w-full bg-gray-50 overflow-x-hidden mt-10">
-
       {/* HERO */}
       <section className="bg-white py-24 text-center px-6 border-b">
         <motion.h1
@@ -64,9 +68,9 @@ Fresher: Yes`;
         </motion.h1>
 
         <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-          Ornsoar Consultancy is a growing overseas job recruitment company helping
-          candidates build successful international careers. Join our team and
-          grow with us.
+          Ornsoar Consultancy is a growing overseas job recruitment company
+          helping candidates build successful international careers. Join our
+          team and grow with us.
         </p>
       </section>
 
@@ -78,10 +82,11 @@ Fresher: Yes`;
             Why Work With Us?
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed">
-            We provide a supportive and growth-oriented environment where freshers
-            and experienced professionals can enhance their skills. At Ornsoar,
-            you will work closely with industry experts, interact with international
-            clients, and gain real-world exposure in overseas recruitment services.
+            We provide a supportive and growth-oriented environment where
+            freshers and experienced professionals can enhance their skills. At
+            Ornsoar, you will work closely with industry experts, interact with
+            international clients, and gain real-world exposure in overseas
+            recruitment services.
           </p>
         </div>
       </section>
@@ -89,7 +94,6 @@ Fresher: Yes`;
       {/* JOB LIST */}
       <section className="pb-24 px-6">
         <div className="max-w-6xl mx-auto space-y-12">
-
           {jobs.map((job, index) => (
             <motion.div
               key={index}
@@ -100,7 +104,6 @@ Fresher: Yes`;
               className="bg-white rounded-3xl p-10 shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300"
             >
               <div className="grid md:grid-cols-3 gap-8">
-
                 {/* LEFT CONTENT */}
                 <div className="md:col-span-2">
                   <h2 className="md:text-2xl text-xl font-bold text-gray-900">

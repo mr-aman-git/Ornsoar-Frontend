@@ -48,10 +48,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <div className="space-y-3 text-sm text-gray-200">
             <div className="flex items-center gap-2">
-              <Phone size={16} /> +91 98765 43210
+              <Phone size={16} /> +91 9626096262
             </div>
             <div className="flex items-center gap-2">
-              <Mail size={16} /> info@ornsoar.com
+              <Mail size={16} /> hr@ornsoar.com
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={16} /> India

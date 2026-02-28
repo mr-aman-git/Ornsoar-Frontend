@@ -73,6 +73,7 @@ const Header = () => {
             onMouseEnter={() => setJobDropdown(true)}
             onMouseLeave={() => setJobDropdown(false)}
           >
+            <Link href="/jobs">
             <div className="flex cursor-pointer items-center gap-1 text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
               Jobs
               <ChevronDown
@@ -80,6 +81,7 @@ const Header = () => {
                 className={`transition-transform duration-300 ${jobDropdown ? "rotate-180" : ""}`}
               />
             </div>
+            </Link>
 
             <AnimatePresence>
               {jobDropdown && (
@@ -137,6 +139,7 @@ const Header = () => {
 
               {/* Mobile Accordion for Jobs */}
               <div className="space-y-4">
+                <Link href="/jobs">
                 <button 
                   onClick={() => setMobileJobOpen(!mobileJobOpen)}
                   className="flex items-center justify-between w-full text-lg font-semibold text-gray-900"
@@ -144,6 +147,7 @@ const Header = () => {
                   Jobs
                   <ChevronDown size={20} className={`transition-transform duration-300 ${mobileJobOpen ? "rotate-180 text-blue-600" : ""}`} />
                 </button>
+                </Link>
                 
                 <AnimatePresence>
                   {mobileJobOpen && (
