@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Bike,
   Brush,
@@ -35,7 +36,6 @@ export default function JobCategories() {
   return (
     <section className="w-full bg-gray-100 py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -48,7 +48,8 @@ export default function JobCategories() {
         </motion.h2>
 
         <p className="mt-4 text-gray-600 text-base md:text-lg">
-          With over 50+ job categories, find the right job with better salary in UAE
+          With over 50+ job categories, find the right job with better salary in
+          UAE
         </p>
 
         {/* Grid */}
@@ -57,25 +58,27 @@ export default function JobCategories() {
             const Icon = cat.icon;
 
             return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                className="group flex flex-col items-center text-center cursor-pointer"
-              >
-                {/* Circle Icon */}
-                <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white shadow transition duration-300">
-                  <Icon size={36} className="text-blue-500" />
-                </div>
+              <Link href="/jobs" key={index}>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  className="group flex flex-col items-center text-center cursor-pointer"
+                >
+                  {/* Circle Icon */}
+                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white shadow transition duration-300">
+                    <Icon size={36} className="text-blue-500" />
+                  </div>
 
-                {/* Text */}
-                <h3 className="mt-5  font-semibold group-hover:text-blue-600 transition">
-                  {cat.name}
-                </h3>
-                <p className="text-gray-500 text-sm mt-1">{cat.jobs}</p>
-              </motion.div>
+                  {/* Text */}
+                  <h3 className="mt-5  font-semibold group-hover:text-blue-600 transition">
+                    {cat.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1">{cat.jobs}</p>
+                </motion.div>
+              </Link>
             );
           })}
         </div>

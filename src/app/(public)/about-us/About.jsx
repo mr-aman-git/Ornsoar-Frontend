@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, Globe, Target, Eye } from "lucide-react";
-
+import Link from "next/link";
 const About = () => {
   return (
     <div className="w-full bg-white mt-20">
@@ -137,9 +137,11 @@ const About = () => {
           Explore verified overseas job opportunities today with Ornsoar
           Consultancy.
         </p>
+        <Link href="/jobs">
         <button className="bg-blue-500 hover:bg-orange-500 text-white px-8 py-3 rounded-xl transition duration-300 shadow-md">
           Explore Jobs
         </button>
+        </Link>
       </section>
     </div>
   );

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Briefcase, Lightbulb, LineChart, Wallet } from "lucide-react";
 import FeatureSlider from "./FeatureSlider";
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="relative bg-[#f4f7fa] pt-42 pb-10 overflow-hidden">
@@ -46,13 +47,17 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-wrap gap-4 mt-18"
           >
-            <button className="bg-blue-500 hover:bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
-              Get Started →
-            </button>
+            <Link href="/jobs">
+              <button className="bg-blue-500 hover:bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
+                Get Started →
+              </button>
+            </Link>
 
-            <button className=" hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg border border-blue-500 text-orange-500 font-semibold transition">
-              Learn More →
-            </button>
+            <Link href="/about-us">
+              <button className=" hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg border border-blue-500 text-orange-500 font-semibold transition">
+                Learn More →
+              </button>
+            </Link>
           </motion.div>
         </div>
 
