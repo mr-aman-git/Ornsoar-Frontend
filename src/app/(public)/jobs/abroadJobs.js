@@ -7,7 +7,7 @@ const abroadJobs = [
     salary: "300 KWD",
     incentive: "Available",
     description:
-      "Responsible for delivering food and parcels across assigned zones. Must have valid bike license. Company provides accommodation and food.",
+      "",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const abroadJobs = [
     salary: "4000 - 5500 AED",
     incentive: "Available",
     description:
-      "Responsible for delivering food and parcels across assigned zones. Must have valid bike license.",
+      "",
   },
 
   {
@@ -26,7 +26,7 @@ const abroadJobs = [
     country: "UAE",
     category: "Labor/Helper",
     salary: "1200 AED",
-    incentive: "Available",
+    incentive: " No Available",
     description:
       "",
   },
@@ -36,7 +36,7 @@ const abroadJobs = [
     country: "UAE",
     category: "Labor/Helper",
     salary: "1600 AED",
-    incentive: "Available",
+    incentive: "No Available",
     description:
       "",
   },
@@ -46,7 +46,7 @@ const abroadJobs = [
     country: "UAE",
     category: "Labor/Helper",
     salary: "1600 AED",
-    incentive: "Available",
+    incentive: "No Available",
     description:
       "",
   },
@@ -56,7 +56,7 @@ const abroadJobs = [
     country: "UAE",
     category: "Carpenter",
     salary: "1600 AED",
-    incentive: "Available",
+    incentive: "No Available",
     description:
       "",
   },
