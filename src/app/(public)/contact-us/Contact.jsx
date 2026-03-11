@@ -13,16 +13,6 @@ import { toast } from "react-toastify";
 // import { addContact } from "../../../routes/userApi.js";
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  // Branch Data - Add more here easily
   const branches = [
     {
       city: "Madurai",
@@ -50,24 +40,41 @@ const Contact = () => {
         "1103 11th floor, Antriskh Bhawan Barakhamba Road, CP, New Delhi",
     },
   ];
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-    setLoading(true);
     e.preventDefault();
-    // try {
-    //   await addContact(form);
-    //   toast.success("Message Sent Successfully!");
-    //   setForm({ name: "", email: "", phone: "", message: "" });
-    //   setLoading(false);
-    // } catch (error) {
-    //   console.error(error);
-    //   toast.error("Technical Error");
-    //   setLoading(false);
-    // }
+    setLoading(true);
+
+    const phoneNumber = "919626096262";
+    const website = "ornsoar.com";
+
+    const message =
+      `👋 Hello Ornsoar Team,\n\n` +
+      `I am visiting *${website}* and I would like to inquire about overseas job opportunities.\n\n` +
+      `*Contact Details:*\n` +
+      `Name: ${form.name}\n` +
+      `Email: ${form.email}\n` +
+      `Phone: ${form.phone}\n\n` +
+      `Message: ${form.message}\n\n` +
+      `Please guide me with the available jobs and the application process.\n\n` +
+      `Thank you.`;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+
+    setLoading(false);
   };
 
   return (
