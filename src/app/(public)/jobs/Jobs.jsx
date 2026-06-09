@@ -23,9 +23,9 @@ export default function Jobs() {
 
       {/* JOB GRID */}
       <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {abroadJobs.map((job) => (
+        {abroadJobs.map((job, index) => (
           <motion.div
-            key={job.id}
+            key={index}
             whileHover={{ y: -5 }}
             className="bg-white p-8 rounded-2xl shadow-md border hover:shadow-xl transition"
           >
