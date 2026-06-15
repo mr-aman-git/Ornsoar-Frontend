@@ -33,7 +33,7 @@ const page = () => {
     <>
       <HeroSection />
       <BrandsSection />
-      <JobCategories />
+      {/* <JobCategories /> */}
       {/* <ClientTestimonials /> */}
       {/* <About/>
         <WhyChoose/>

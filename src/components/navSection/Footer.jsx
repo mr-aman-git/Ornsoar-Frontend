@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         {/* Services */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-900">
             Our Services
           </h3>
@@ -71,7 +71,7 @@ const Footer = () => {
               Documentation Support
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact Info */}
         <div>

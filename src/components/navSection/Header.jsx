@@ -20,7 +20,8 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about-us" },
+    // { name: "About Us", href: "/about-us" },
+    
   ];
 
   const jobLinks = [
@@ -68,7 +69,7 @@ const Header = () => {
           ))}
 
           {/* Desktop Jobs Dropdown */}
-          <div
+          {/* <div
             className="relative"
             onMouseEnter={() => setJobDropdown(true)}
             onMouseLeave={() => setJobDropdown(false)}
@@ -76,14 +77,14 @@ const Header = () => {
             <Link href="/jobs">
             <div className="flex cursor-pointer items-center gap-1 text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
               Jobs
-              {/* <ChevronDown
+              <ChevronDown
                 size={14}
                 className={`transition-transform duration-300 ${jobDropdown ? "rotate-180" : ""}`}
-              /> */}
+              />
             </div>
             </Link>
 
-            {/* <AnimatePresence>
+            <AnimatePresence>
               {jobDropdown && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -100,16 +101,16 @@ const Header = () => {
                   ))}
                 </motion.div>
               )}
-            </AnimatePresence> */}
-          </div>
+            </AnimatePresence>
+          </div> */}
 
           <Link href="/contact-us" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
             Contact
           </Link>
 
-          <Link href="/career" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+          {/* <Link href="/career" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
             Careers
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile Toggle Button */}

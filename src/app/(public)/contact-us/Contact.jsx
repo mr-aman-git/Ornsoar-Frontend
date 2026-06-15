@@ -242,7 +242,7 @@ const Contact = () => {
           <div className="flex items-center gap-4 mb-10">
             <div className="h-0.5 flex-1 bg-gray-200"></div>
             <h4 className="text-3xl font-bold text-blue-500 px-4 text-center">
-              Our Regional <span className="text-orange-500">Branches</span>
+              Our <span className="text-orange-500">Branch</span>
             </h4>
             <div className="h-0.5 flex-1 bg-gray-200"></div>
           </div>
@@ -283,7 +283,7 @@ const Contact = () => {
         </div>
 
         {/* ================= MAP SECTION ================= */}
-        <div className="mt-24">
+        {/* <div className="mt-24">
           <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4692.432072339135!2d78.1410918!3d9.9359693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5c7615b8ec3%3A0x7b28785d111220a6!2s4%2F2a%2C%20Dr%20Thangaraj%20Salai%2C%20Mellur%2C%20KK%20Nagar%2C%20Madurai%2C%20Tamil%20Nadu%20625020!5e1!3m2!1sen!2sin!4v1769492727078!5m2!1sen!2sin"
@@ -294,7 +294,7 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
