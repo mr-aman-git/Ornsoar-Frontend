@@ -48,7 +48,7 @@ const About = () => {
             global career journey.
           </p>
 
-          <Link href="/about">
+          <Link href="/">
             <button className="bg-blue-500 hover:bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition">
               Learn More →
             </button>

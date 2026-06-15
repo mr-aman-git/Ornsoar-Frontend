@@ -47,13 +47,13 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-wrap gap-4 mt-18"
           >
-            <Link href="/jobs">
+            <Link href="/">
               <button className="bg-blue-500 hover:bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
                 Get Started →
               </button>
             </Link>
 
-            <Link href="/about-us">
+            <Link href="/">
               <button className=" hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg border border-blue-500 text-orange-500 font-semibold transition">
                 Learn More →
               </button>
