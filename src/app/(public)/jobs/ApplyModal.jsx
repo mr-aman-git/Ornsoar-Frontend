@@ -40,7 +40,7 @@ export default function ApplyModal({ job, onClose }) {
     formBody.append("entry.2047254529", name); // Name field entry ID
     formBody.append("entry.2025401693", mobile); // Mobile no entry ID
     formBody.append("entry.1764946353", age); // Age entry ID
-    formBody.append("entry.1", location); // location entry ID
+    // formBody.append("entry.1", location); 
     formBody.append("entry.1749605671", job?.title || ""); // Jobtitle entry ID
     formBody.append("entry.801756122", job?.country || ""); // Job Country entry ID
     formBody.append("entry.1892928777", job?.salary || ""); // Salary entry ID
