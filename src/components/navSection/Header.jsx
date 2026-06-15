@@ -76,14 +76,14 @@ const Header = () => {
             <Link href="/jobs">
             <div className="flex cursor-pointer items-center gap-1 text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
               Jobs
-              <ChevronDown
+              {/* <ChevronDown
                 size={14}
                 className={`transition-transform duration-300 ${jobDropdown ? "rotate-180" : ""}`}
-              />
+              /> */}
             </div>
             </Link>
 
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {jobDropdown && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -100,7 +100,7 @@ const Header = () => {
                   ))}
                 </motion.div>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
           </div>
 
           <Link href="/contact-us" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">

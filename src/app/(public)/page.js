@@ -34,7 +34,7 @@ const page = () => {
       <HeroSection />
       <BrandsSection />
       <JobCategories />
-      <ClientTestimonials />
+      {/* <ClientTestimonials /> */}
       {/* <About/>
         <WhyChoose/>
         <HowItWorks/> */}

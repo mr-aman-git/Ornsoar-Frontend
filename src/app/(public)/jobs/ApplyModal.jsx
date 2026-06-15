@@ -10,6 +10,7 @@ export default function ApplyModal({ job, onClose }) {
     name: "",
     mobile: "",
     age: "",
+    location: "",
   });
   const [loading, setLoading] = useState(false);
 
@@ -20,10 +21,10 @@ export default function ApplyModal({ job, onClose }) {
   const handleApply = async (e) => {
     e.preventDefault();
 
-    const { name, mobile, age } = formData;
+    const { name, mobile, age, location } = formData;
 
     // Validation
-    if (!name || !mobile || !age) {
+    if (!name || !mobile || !age || !location) {
       alert("Please fill in all details (Name, Mobile, Age)");
       return;
     }
@@ -39,6 +40,7 @@ export default function ApplyModal({ job, onClose }) {
     formBody.append("entry.2047254529", name); // Name field entry ID
     formBody.append("entry.2025401693", mobile); // Mobile no entry ID
     formBody.append("entry.1764946353", age); // Age entry ID
+    formBody.append("entry.1", location); // location entry ID
     formBody.append("entry.1749605671", job?.title || ""); // Jobtitle entry ID
     formBody.append("entry.801756122", job?.country || ""); // Job Country entry ID
     formBody.append("entry.1892928777", job?.salary || ""); // Salary entry ID
@@ -141,6 +143,21 @@ export default function ApplyModal({ job, onClose }) {
               required
               placeholder="Enter Your Age"
               value={formData.age}
+              onChange={handleChange}
+              className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-900 outline-none"
+            />
+          </div>
+
+          <div>
+            <label className="text-xs font-bold text-blue-900 block mb-1">
+              Location
+            </label>
+            <input
+              type="location"
+              name="location"
+              required
+              placeholder="Enter Your Location"
+              value={formData.location}
               onChange={handleChange}
               className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-900 outline-none"
             />
