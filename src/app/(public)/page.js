@@ -32,7 +32,7 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <BrandsSection />
+      {/* <BrandsSection /> */}
       {/* <JobCategories /> */}
       {/* <ClientTestimonials /> */}
       {/* <About/>

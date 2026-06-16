@@ -140,7 +140,7 @@ const Header = () => {
 
               {/* Mobile Accordion for Jobs */}
               <div className="space-y-4">
-                <Link href="/jobs">
+                {/* <Link href="/jobs">
                 <button 
                   onClick={() => setMobileJobOpen(!mobileJobOpen)}
                   className="flex items-center justify-between w-full text-lg font-semibold text-gray-900"
@@ -148,7 +148,7 @@ const Header = () => {
                   Jobs
                   <ChevronDown size={20} className={`transition-transform duration-300 ${mobileJobOpen ? "rotate-180 text-blue-600" : ""}`} />
                 </button>
-                </Link>
+                </Link> */}
                 
                 <AnimatePresence>
                   {mobileJobOpen && (
@@ -174,9 +174,9 @@ const Header = () => {
                 <span className="text-lg font-semibold text-gray-900">Contact</span>
               </Link>
 
-              <Link href="/career" onClick={closeAll}>
+              {/* <Link href="/career" onClick={closeAll}>
                 <span className="text-lg font-semibold text-gray-900">Careers</span>
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         )}
