@@ -21,7 +21,6 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     // { name: "About Us", href: "/about-us" },
-    
   ];
 
   const jobLinks = [
@@ -104,7 +103,10 @@ const Header = () => {
             </AnimatePresence>
           </div> */}
 
-          <Link href="/contact-us" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+          <Link
+            href="/contact-us"
+            className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+          >
             Contact
           </Link>
 
@@ -134,7 +136,9 @@ const Header = () => {
             <div className="flex flex-col p-6 space-y-6">
               {navLinks.map((link) => (
                 <Link key={link.name} href={link.href} onClick={closeAll}>
-                  <span className="text-lg font-semibold text-gray-900">{link.name}</span>
+                  <span className="text-lg font-semibold text-gray-900">
+                    {link.name}
+                  </span>
                 </Link>
               ))}
 
@@ -149,10 +153,10 @@ const Header = () => {
                   <ChevronDown size={20} className={`transition-transform duration-300 ${mobileJobOpen ? "rotate-180 text-blue-600" : ""}`} />
                 </button>
                 </Link> */}
-                
+
                 <AnimatePresence>
                   {mobileJobOpen && (
-                    <motion.div 
+                    <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -171,7 +175,9 @@ const Header = () => {
               </div>
 
               <Link href="/contact-us" onClick={closeAll}>
-                <span className="text-lg font-semibold text-gray-900">Contact</span>
+                <span className="text-lg font-semibold text-gray-900">
+                  Contact
+                </span>
               </Link>
 
               {/* <Link href="/career" onClick={closeAll}>
