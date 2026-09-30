@@ -7,7 +7,7 @@ import FeatureSlider from "./FeatureSlider";
 import Link from "next/link";
 const HeroSection = () => {
   return (
-    <section className="relative bg-[#f4f7fa] pt-42 pb-10 overflow-hidden">
+    <section className="relative  pt-42 pb-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>

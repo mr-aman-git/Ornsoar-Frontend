@@ -6,6 +6,7 @@ import HowItWorks from "../../components/homeSection/HowItWorks";
 import BrandsSection from "../../components/homeSection/BrandsSection";
 import JobCategories from "../../components/homeSection/JobCategories";
 import ClientTestimonials from "../../components/homeSection/ClientTestimonials";
+import JobsPage from "./jobs/JobPage";
 
 export const metadata = {
   title: "Ornsoar Abroad Jobs | Overseas Job Consultancy",
@@ -33,7 +34,7 @@ const page = () => {
     <>
       <HeroSection />
       {/* <BrandsSection /> */}
-      <JobCategories />
+      <JobsPage />
       {/* <ClientTestimonials /> */}
       {/* <About/>
         <WhyChoose/>
