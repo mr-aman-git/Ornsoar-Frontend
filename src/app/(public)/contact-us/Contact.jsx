@@ -13,33 +13,33 @@ import { toast } from "react-toastify";
 // import { addContact } from "../../../routes/userApi.js";
 
 const Contact = () => {
-  const branches = [
-    {
-      city: "Madurai",
-      address:
-        "4/2A, Dr.Thagaraj Salai, Near Raja Muthiah Mandram, K.K. Nager, Madurai - 625 020",
-    },
-    // {
-    //   city: "Chennai",
-    //   address:
-    //     "4M 4th floor century plaza, indimet pvt ltd., no:560 to 562, anna salai, thiru vi ka kudiyiruppu, teynampet, chennai - 600017",
-    // },
-    // {
-    //   city: "Coimbatore",
-    //   address:
-    //     "2, Bharathi Colony Rd, Peelamedu, Coimbatore, Tamil Nadu 641004",
-    // },
-    // {
-    //   city: "Ramanathapuram",
-    //   address:
-    //     "511-7, Muthu Bakery Upstairs, Bus Stop, No. #1, opp. Bharathi Nagar, Ramanathapuram - 623503",
-    // },
-    // {
-    //   city: "Delhi",
-    //   address:
-    //     "1103 11th floor, Antriskh Bhawan Barakhamba Road, CP, New Delhi",
-    // },
-  ];
+  // const branches = [
+  //   {
+  //     city: "Madurai",
+  //     address:
+  //       "4/2A, Dr.Thagaraj Salai, Near Raja Muthiah Mandram, K.K. Nager, Madurai - 625 020",
+  //   },
+  //   {
+  //     city: "Chennai",
+  //     address:
+  //       "4M 4th floor century plaza, indimet pvt ltd., no:560 to 562, anna salai, thiru vi ka kudiyiruppu, teynampet, chennai - 600017",
+  //   },
+  //   {
+  //     city: "Coimbatore",
+  //     address:
+  //       "2, Bharathi Colony Rd, Peelamedu, Coimbatore, Tamil Nadu 641004",
+  //   },
+  //   {
+  //     city: "Ramanathapuram",
+  //     address:
+  //       "511-7, Muthu Bakery Upstairs, Bus Stop, No. #1, opp. Bharathi Nagar, Ramanathapuram - 623503",
+  //   },
+  //   {
+  //     city: "Delhi",
+  //     address:
+  //       "1103 11th floor, Antriskh Bhawan Barakhamba Road, CP, New Delhi",
+  //   },
+  // ];
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -238,7 +238,7 @@ const Contact = () => {
         </div>
 
         {/* ================= BRANCHES SECTION ================= */}
-        <div className="mt-24">
+        {/* <div className="mt-24">
           <div className="flex items-center gap-4 mb-10">
             <div className="h-0.5 flex-1 bg-gray-200"></div>
             <h4 className="text-3xl font-bold text-blue-500 px-4 text-center">
@@ -280,7 +280,7 @@ const Contact = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* ================= MAP SECTION ================= */}
         {/* <div className="mt-24">

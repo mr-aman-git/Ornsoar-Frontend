@@ -47,7 +47,7 @@ export default function JobsPage() {
   return (
     <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 mt-20">
       {/* Top Banner */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
+      {/* <div className="max-w-7xl mx-auto text-center mb-12">
         <span className="rounded-full bg-blue-100 px-4 py-1.5 text-xs sm:text-sm font-semibold text-blue-600 inline-block mb-4">
           ✈️ Verified Overseas Opportunities
         </span>
@@ -58,7 +58,7 @@ export default function JobsPage() {
           Apply directly via WhatsApp. Select your role below and submit your
           details to start the verification process.
         </p>
-      </div>
+      </div> */}
 
       {/* Jobs Grid */}
       <div className="max-w-7xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
