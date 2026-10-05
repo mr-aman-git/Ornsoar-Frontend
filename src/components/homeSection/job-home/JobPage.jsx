@@ -71,14 +71,14 @@ export default function JobPage() {
 
         {/* Bottom Section: Jobs Grid */}
         <div className=" lg:mt-20 pt-10 border-t border-gray-200">
-          <div className="text-center max-w-2xl mx-auto mb-10">
+          {/* <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Open Abroad Positions
             </h2>
             <p className="text-gray-500 text-sm mt-2">
               Click on any position to fill out the application form directly.
             </p>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {JOBS_LIST.map((job) => (
