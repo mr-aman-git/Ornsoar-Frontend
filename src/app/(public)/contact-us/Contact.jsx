@@ -91,8 +91,9 @@ const Contact = () => {
             Get In <span className="text-orange-500">Touch</span>
           </h2>
           <p className="mt-5 text-gray-600 text-lg italic">
-            Reach out to us for MBBS admission guidance, counseling, university
-            selection, and visa assistance.
+            Reach out to us for overseas job guidance, career counseling,
+            verified employer placement, and complete visa assistance in UAE &
+            Dubai.
           </p>
         </motion.div>
 
