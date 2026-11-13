@@ -139,7 +139,7 @@ const Contact = () => {
                     <FaMapMarkerAlt size={20} />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Head Office</p>
+                    
                     <p className="font-semibold text-gray-800">
                       Tamil Nadu, India
                     </p>
